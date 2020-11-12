@@ -1,0 +1,51 @@
+<div id="title">
+  <%= image_tag("250px-Animal_Crossing_Logo.png", :alt => "Animal Crossing") %>
+</div>
+
+<div id="villagers">
+  <p class="h2-text">Villagers of Flan</p>
+
+  <div class="villager-list">
+    <%= form_with(url: show_villager_home_index_path) do |f| %>
+      <%= f.select :villager_name, options_for_select(@villagers)%>
+      <%= f.submit "Show details" %>
+    <% end %>
+  </div>
+
+  <div class="flex-container">
+    <div class="row">
+      <div id='hazel' class='villager-card'>
+        <div class='villager-img'>
+          <%= image_tag("Hazel_NH.png", :alt => "Hazel") %>
+        </div>
+      </div>
+
+      <div id='sterling' class='villager-card'>
+        <div class='villager-img'>
+          <%= image_tag("300px-Sterling_NH.png", :alt =>"Sterling") %>
+        </div>
+      </div>
+
+      <div id='poppy' class='villager-card'>
+        <div class='villager-img'>
+          <%= image_tag("300px-Poppy_NH.png", :alt =>"Poppy") %>
+        </div>
+      </div>
+
+      <div id='pango' class='villager-card'>
+        <div class='villager-img'>
+          <%= image_tag("300px-Pango_NH.png", :alt =>"Pango") %>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id='villager-bio' class="bio-text">
+  <%= render partial: 'hazel.html.erb' %>
+  <%= render partial: 'sterling.html.erb' %>
+  <%= render partial: 'poppy.html.erb' %>
+  <%= render partial: 'pango.html.erb' %>
+</div>
+
+<%= render partial: 'index.js.erb' %>
