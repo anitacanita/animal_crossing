@@ -40,12 +40,6 @@
   text-align: center;
 }
 
-.bio-text {
-  text-align: center;
-  font-size: 100%;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-}
-
 .name {
   font-size: 200%;
 }
@@ -63,8 +57,10 @@
   flex-direction: column;
   flex-basis: 100%;
   flex: 1;
-  display: none;
   background-color:LemonChiffon;
   border:tan;
   border-style: solid;
+  text-align: center;
+  font-size: 100%;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
