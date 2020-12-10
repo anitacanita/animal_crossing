@@ -1,0 +1,29 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  species: MyString
+  personality: MyString
+  hobby: MyString
+  birthday: 2020-12-10
+  catchphrase: MyString
+  favourite_song: MyString
+  favorite_saying: MyString
+  style_1: MyString
+  style_2: MyString
+  color_1: MyString
+  color_2: MyString
+
+two:
+  name: MyString
+  species: MyString
+  personality: MyString
+  hobby: MyString
+  birthday: 2020-12-10
+  catchphrase: MyString
+  favourite_song: MyString
+  favorite_saying: MyString
+  style_1: MyString
+  style_2: MyString
+  color_1: MyString
+  color_2: MyString
