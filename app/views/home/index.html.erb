@@ -7,7 +7,7 @@
 
   <div class="villager-list">
     <%= form_with(url: show_villager_home_index_path) do |f| %>
-      <%= f.select :villager_name, options_for_select(@villagers)%>
+      <%= f.collection_select :villager_id, @villagers, :id, :name %>
       <%= f.submit "Show details" %>
     <% end %>
   </div>

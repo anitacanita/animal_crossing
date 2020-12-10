@@ -1,9 +1,9 @@
 <div class='villager-bio'>
-  <p class='name'><%= @villager_name.capitalize %></p>
-  <p>Species: <%= @species %></p>
-  <p>Personality: <%= @personality %></p>
-  <p>Gender: <%= @gender %></p>
-  <p>Birthday: <%= @birthday %></p>
-  <p>Quote: "<%= @quote %>"</p>
-  <p>Catchphrase: "<%= @catchphrase %>"</p>
+  <p class='name'><%= @villager.name %></p>
+  <p>Species: <%= @villager.species %></p>
+  <p>Personality: <%= @villager.personality %></p>
+  <p>Gender: <%= @villager.gender %></p>
+  <p>Birthday: <%= @villager.birthday.to_date.to_formatted_s(:short) %></p>
+  <p>Quote: "<%= @villager.favorite_saying %>"</p>
+  <p>Catchphrase: "<%= @villager.catchphrase %>"</p>
 </div>
